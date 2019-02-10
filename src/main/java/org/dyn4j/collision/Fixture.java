@@ -64,7 +64,7 @@ public class Fixture implements DataContainer {
 	protected final UUID id;
 	
 	/** The convex shape for this fixture */
-	protected final Convex shape;
+	protected Convex shape;
 	
 	/** The collision filter */
 	protected Filter filter;
@@ -139,6 +139,10 @@ public class Fixture implements DataContainer {
 	 */
 	public Convex getShape() {
 		return this.shape;
+	}
+	
+	public void setShape(Convex shape) {
+		this.shape = shape;
 	}
 	
 	/**
